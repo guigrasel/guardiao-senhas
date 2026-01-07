@@ -17,16 +17,34 @@ const props = defineProps({
 })
 
 const strengthName = computed(() => {
-  if (props.score < 25) return "Muito fraca"
-  if (props.score < 50) return "Fraca"
-  if (props.score < 75) return "Boa"
+  if (props.score < 25) {
+    return "Muito fraca"
+  }
+
+  if (props.score < 50) {
+    return "Fraca"
+  }
+
+  if (props.score < 75) {
+    return "Boa"
+  }
+
   return "Forte"
 })
 
 const barColor = computed(() => {
-  if (props.score < 25) return "#ff4d4d"
-  if (props.score < 50) return "#ff9900"
-  if (props.score < 75) return "#0099ff"
+  if (props.score < 25) {
+    return "#ff4d4d"
+  }
+
+  if (props.score < 50) {
+    return "#ff9900"
+  }
+
+  if (props.score < 75) {
+    return "#0099ff"
+  }
+
   return "#00cc66"
 })
 </script>

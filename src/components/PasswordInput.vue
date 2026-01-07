@@ -29,11 +29,7 @@ function emitUpdate() {
 
 function toggleShow() {
   show.value = !show.value
-  // opcional: emitir o valor atual quando alterna a visibilidade
+
   emitUpdate()
 }
 </script>
-
-<style scoped>
-/* Mantive o estilo inline para o layout, mas você pode mover para aqui */
-</style>
